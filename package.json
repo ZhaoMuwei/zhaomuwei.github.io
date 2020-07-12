@@ -1,0 +1,24 @@
+{
+  "name": "me",
+  "version": "1.0.0",
+  "description": "赵沐为的职业信息",
+  "keywords": [
+    "zhaomuwei",
+    "Zhao Muwei"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "github:ZhaoMuwei/me",
+  "author": {
+    "name": "Zhao Muwei",
+    "email": "zhaomuwei@gmail.com"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZhaoMuwei/me/issues"
+  },
+  "homepage": "https://github.com/ZhaoMuwei/me#readme",
+  "devDependencies": {}
+}

@@ -1,0 +1,54 @@
+@media (max-width: 799px) {
+}
+
+/* Fix <body> in the middle on a large display */
+@media (min-width: 800px) {
+    body {
+        width: 620px;
+        margin: 0 auto;
+        padding: 100px 0;
+        position: relative;
+
+        font-size: 0;
+        color: var(--color);
+    }
+
+    body > section {
+        margin-bottom: 40px;
+        padding: 0;
+        padding-left: 120px;
+        position: relative;
+    }
+
+    section.landing {
+        width: 100%;
+    }
+
+    /* 赵沐为 */
+    .landing .name {
+        margin-bottom: 25px;
+        font-size: 30px;
+        letter-spacing: 1px;
+    }
+
+    .section-title {
+        margin: 0;
+        padding: 5px 12px;
+        position: absolute;
+        transform: translate(-120px, 5px);
+        font-size: var(--size-section-title);
+        color: var(--color-section-title);
+        background-color: var(--color-section-title-bg);
+        user-select: none;
+
+        /* TODO sticky positioning */
+        /* position: sticky;
+        top: 0; */
+    }
+
+    .content {
+        font-size: var(--size);
+        line-height: 1.8;
+        white-space: nowrap;
+    }
+}
