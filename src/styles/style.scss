@@ -79,6 +79,13 @@ body {
             .content {
                 font-size: 14px;
                 color: #9C9C9C;
+                a {
+                    margin-left: 10px;;
+                    text-decoration: underline;
+                    &:visited {
+                        color: #9C9C9C;
+                    }
+                }
             }
         }
     }
