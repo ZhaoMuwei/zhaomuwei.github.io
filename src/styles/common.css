@@ -1,23 +1,259 @@
+@charset "UTF-8";
 :root {
-    --color: #2D2D2D;
-    --color-section-title: #F1F1F1;
-    --color-section-title-bg: #505050;
-
-    --size: 18px;
-    --size-section-title: 18px;
+  --color: #333;
+  --color-section-title: #333;
+  --color-section-title-bg: #DDD;
+  --color-body-bg: #FAFAFA;
+  --color-tag: #555;
+  /* tag 颜色比正文颜色略浅 */
+  /* tag 颜色 */
+  --color-ts: #23527C;
+  --color-react: #61DAFB;
+  --color-webpack: #8DD6F9;
+  --color-npm: #C12127;
+  --color-git: #EF391A;
+  --color-node: #43853D;
+  --color-mongo: #13AA52;
+  --color-bdcloud: #2468F2;
+  --color-viz: #2468F2;
+  --color-graphql: #E10098;
+  --color-lerna: #CC00FF;
+  --color-jest: #15C213;
+  --color-k8s: #184EB1;
+  --color-enzyme: #484848;
+  --color-docker: #2496ED;
+  --color-bdnuomi: #BF4080;
+  --color-yog: #585858;
+  --color-fis: #585858;
+  --color-bdwk: #22AB82;
+  --color-bdyd: #58BD5A;
+  --color-less: #428BCA;
+  --color-jquery: #0769AD;
+  --color-zepto: #D4B4FF;
+  --color-seu: #718665;
+  --color-jlu: #002147;
+  --font-size: 16px;
+  --font-size-title: 18px;
+  --font-size-sub-title: 16px;
+  --font-size-tag: 16px;
+  --font-size-mobile: 16px;
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html, body {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    background-color: var(--color-section-title);
+  margin: 0;
+  background-color: var(--color-body-bg);
 }
 
 h1, h2, p {
-    margin: 0;
+  margin: 0;
 }
+
+::selection {
+  background-color: var(--color-section-title-bg);
+}
+
+/* Tag */
+.tag {
+  padding: 1px 7px 0;
+  margin: 0 1px;
+  font-size: var(--font-size-tag);
+  color: var(--color-tag);
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  text-decoration: none;
+  cursor: pointer;
+  transition-property: background, border-radius;
+  transition-duration: 0.13s;
+  transition-timing-function: ease;
+}
+
+.tag:visited {
+  color: var(--color-tag);
+}
+
+.tag:hover {
+  color: #FFF;
+  border-radius: 5px;
+}
+
+.tag.tag-ts {
+  border-color: var(--color-ts);
+}
+.tag.tag-ts:hover {
+  background-color: var(--color-ts);
+}
+
+.tag.tag-react {
+  border-color: var(--color-react);
+}
+.tag.tag-react:hover {
+  background-color: var(--color-react);
+}
+
+.tag.tag-webpack {
+  border-color: var(--color-webpack);
+}
+.tag.tag-webpack:hover {
+  background-color: var(--color-webpack);
+}
+
+.tag.tag-npm {
+  border-color: var(--color-npm);
+}
+.tag.tag-npm:hover {
+  background-color: var(--color-npm);
+}
+
+.tag.tag-git {
+  border-color: var(--color-git);
+}
+.tag.tag-git:hover {
+  background-color: var(--color-git);
+}
+
+.tag.tag-node {
+  border-color: var(--color-node);
+}
+.tag.tag-node:hover {
+  background-color: var(--color-node);
+}
+
+.tag.tag-mongo {
+  border-color: var(--color-mongo);
+}
+.tag.tag-mongo:hover {
+  background-color: var(--color-mongo);
+}
+
+.tag.tag-bdcloud {
+  border-color: var(--color-bdcloud);
+}
+.tag.tag-bdcloud:hover {
+  background-color: var(--color-bdcloud);
+}
+
+.tag.tag-viz {
+  border-color: var(--color-viz);
+}
+.tag.tag-viz:hover {
+  background-color: var(--color-viz);
+}
+
+.tag.tag-graphql {
+  border-color: var(--color-graphql);
+}
+.tag.tag-graphql:hover {
+  background-color: var(--color-graphql);
+}
+
+.tag.tag-lerna {
+  border-color: var(--color-lerna);
+}
+.tag.tag-lerna:hover {
+  background-color: var(--color-lerna);
+}
+
+.tag.tag-jest {
+  border-color: var(--color-jest);
+}
+.tag.tag-jest:hover {
+  background-color: var(--color-jest);
+}
+
+.tag.tag-k8s {
+  border-color: var(--color-k8s);
+}
+.tag.tag-k8s:hover {
+  background-color: var(--color-k8s);
+}
+
+.tag.tag-enzyme {
+  border-color: var(--color-enzyme);
+}
+.tag.tag-enzyme:hover {
+  background-color: var(--color-enzyme);
+}
+
+.tag.tag-docker {
+  border-color: var(--color-docker);
+}
+.tag.tag-docker:hover {
+  background-color: var(--color-docker);
+}
+
+.tag.tag-bdnuomi {
+  border-color: var(--color-bdnuomi);
+}
+.tag.tag-bdnuomi:hover {
+  background-color: var(--color-bdnuomi);
+}
+
+.tag.tag-fis {
+  border-color: var(--color-fis);
+}
+.tag.tag-fis:hover {
+  background-color: var(--color-fis);
+}
+
+.tag.tag-yog {
+  border-color: var(--color-yog);
+}
+.tag.tag-yog:hover {
+  background-color: var(--color-yog);
+}
+
+.tag.tag-bdwk {
+  border-color: var(--color-bdwk);
+}
+.tag.tag-bdwk:hover {
+  background-color: var(--color-bdwk);
+}
+
+.tag.tag-bdyd {
+  border-color: var(--color-bdyd);
+}
+.tag.tag-bdyd:hover {
+  background-color: var(--color-bdyd);
+}
+
+.tag.tag-less {
+  border-color: var(--color-less);
+}
+.tag.tag-less:hover {
+  background-color: var(--color-less);
+}
+
+.tag.tag-jquery {
+  border-color: var(--color-jquery);
+}
+.tag.tag-jquery:hover {
+  background-color: var(--color-jquery);
+}
+
+.tag.tag-zepto {
+  border-color: var(--color-zepto);
+}
+.tag.tag-zepto:hover {
+  background-color: var(--color-zepto);
+}
+
+.tag.tag-seu {
+  border-color: var(--color-seu);
+}
+.tag.tag-seu:hover {
+  background-color: var(--color-seu);
+}
+
+.tag.tag-jlu {
+  border-color: var(--color-jlu);
+}
+.tag.tag-jlu:hover {
+  background-color: var(--color-jlu);
+}
+
+/*# sourceMappingURL=common.css.map */

@@ -8,6 +8,8 @@
   ],
   "main": "index.js",
   "scripts": {
+    "build": "sass src/styles:src/styles",
+    "deploy": "gh-pages -d src",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": "github:ZhaoMuwei/me",
@@ -20,5 +22,8 @@
     "url": "https://github.com/ZhaoMuwei/me/issues"
   },
   "homepage": "https://github.com/ZhaoMuwei/me#readme",
-  "devDependencies": {}
+  "devDependencies": {
+    "gh-pages": "^3.1.0",
+    "sass": "^1.26.10"
+  }
 }

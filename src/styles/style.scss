@@ -1,0 +1,124 @@
+body {
+    margin: 0 auto;
+    position: relative;
+
+    font-size: 0;
+    color: var(--color);
+}
+
+@media (max-width: 699px) {
+    body {
+        width: 100%;
+        padding: 30px 0;
+    }
+
+    body > section {
+        margin-bottom: 20px;
+        padding: 0;
+        /* padding-left: 120px; */
+        position: relative;
+    }
+
+    /* 赵沐为 */
+    .basic-info .name {
+        margin-bottom: 25px;
+        padding: 0 20px;
+
+        font-size: 26px;
+        font-style: normal;
+        font-weight: normal;
+        letter-spacing: 1px;
+    }
+
+    .section-title {
+        margin: 0;
+        padding: 5px 20px;
+        /* position: absolute; */
+        /* transform: translate(-120px, 5px); */
+
+        font-size: var(--font-size-mobile);
+        color: var(--color-section-title);
+        background-color: var(--color-section-title-bg);
+        user-select: none;
+
+        /* TODO sticky positioning */
+        /* position: sticky;
+        top: 0; */
+    }
+
+    .content {
+        padding: 0 20px;
+        font-size: var(--font-size-mobile);
+        line-height: 1.8;
+    }
+}
+
+/* Fix <body> in the middle on a large display */
+@media (min-width: 700px) {
+    body {
+        width: 610px;
+        /* margin: 0 auto; */
+        padding: 0;
+        padding-top: 80px;
+        /* position: relative; */
+
+        /* font-size: 0;
+        color: var(--color); */
+    }
+
+    body > section {
+        margin-bottom: 40px;
+        padding: 0;
+        padding-left: 110px;
+        position: relative;
+        min-height: 1px;
+
+        /* footer 非常特殊 */
+        &.footer {
+            margin-top: 100px;
+            .content {
+                font-size: 14px;
+                color: #9C9C9C;
+            }
+        }
+    }
+
+    /* 赵沐为 */
+    .basic-info .name {
+        margin-bottom: 25px;
+        font-size: 30px;
+        letter-spacing: 1px;
+    }
+
+    .section-title {
+        margin: 0;
+        padding: 5px 12px;
+        position: absolute;
+        transform: translate(-110px, 1px);
+        font-size: var(--font-size-title);
+        color: var(--color-section-title);
+        background-color: var(--color-section-title-bg);
+        border-radius: 3px;
+        user-select: none;
+
+        /* TODO sticky positioning */
+        /* position: sticky;
+        top: 0; */
+
+        &.sub {
+            font-size: var(--font-size-sub-title);
+            opacity: .75;
+        }
+
+        &.bdcloud {
+            color: #FFF;
+            background-color: var(--color-bdcloud);
+        }
+    }
+
+
+    .content {
+        font-size: var(--font-size);
+        line-height: 1.9;
+    }
+}
