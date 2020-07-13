@@ -76,6 +76,13 @@ body {
     font-size: 14px;
     color: #9C9C9C;
   }
+  body > section.footer .content a {
+    margin-left: 10px;
+    text-decoration: underline;
+  }
+  body > section.footer .content a:visited {
+    color: #9C9C9C;
+  }
 
   /* 赵沐为 */
   .basic-info .name {
