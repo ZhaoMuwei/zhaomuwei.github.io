@@ -34,10 +34,11 @@
     --color-gulp: #CF4647;
     --color-php: #8892BF;
 
-    --font-size: 16px;
-    --font-size-title: 18px;
-    --font-size-sub-title: 16px;
-    --font-size-tag: 16px;
+    --font-size: 1rem;
+    --font-size-title: 1.2rem;
+    --font-size-sub-title: 1rem;
+    --font-size-tag: 1rem;
+
     --font-size-mobile: 16px;
 }
 
@@ -47,6 +48,7 @@
 
 html, body {
     margin: 0;
+    font-size: 16px;
     // FYI https://zenozeng.github.io/fonts.css/
     font-family: -apple-system, "Noto Sans", "Helvetica Neue", "PingFang SC", Helvetica,
         "Nimbus Sans L", Arial, "Liberation Sans", "Hiragino Sans GB",
