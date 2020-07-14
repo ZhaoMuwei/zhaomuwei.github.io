@@ -31,6 +31,8 @@
     --color-zepto: #D4B4FF;
     --color-seu: #718665;
     --color-jlu: #002147;
+    --color-gulp: #CF4647;
+    --color-php: #8892BF;
 
     --font-size: 16px;
     --font-size-title: 18px;
@@ -116,3 +118,5 @@ h1, h2, p {
 @include tag-color(zepto);
 @include tag-color(seu);
 @include tag-color(jlu);
+@include tag-color(gulp);
+@include tag-color(php);
