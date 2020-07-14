@@ -8,8 +8,10 @@
   ],
   "main": "index.js",
   "scripts": {
-    "build": "sass src/styles:src/styles",
-    "deploy": "gh-pages -d src",
+    "clean": "rimraf dist",
+    "dev": "npm run clean && gulp",
+    "build": "npm run clean && NODE_ENV=production gulp",
+    "deploy": "npm run build && gh-pages -d dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": "github:ZhaoMuwei/me",
@@ -24,6 +26,21 @@
   "homepage": "https://github.com/ZhaoMuwei/me#readme",
   "devDependencies": {
     "gh-pages": "^3.1.0",
-    "sass": "^1.26.10"
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-if": "^3.0.0",
+    "gulp-inject": "^5.0.5",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-replace": "^1.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "rimraf": "^3.0.2",
+    "sass": "^1.26.10",
+    "stream-series": "^0.1.1",
+    "typescript": "^3.9.6"
+  },
+  "dependencies": {
+    "gulp-htmlmin": "^5.0.1"
   }
 }
