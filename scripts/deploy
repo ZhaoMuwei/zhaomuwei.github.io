@@ -1,5 +1,0 @@
-#!/usr/bin/env node
-
-const ghpages = require('gh-pages');
-
-ghpages.publish('src', {branch: 'pages-test'}, function(err) {});
