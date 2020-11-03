@@ -37,9 +37,9 @@
     "gulp-sourcemaps": "^2.6.5",
     "htmlhint": "^0.14.1",
     "rimraf": "^3.0.2",
-    "sass": "^1.26.10",
+    "sass": "^1.28.0",
     "stream-series": "^0.1.1",
-    "typescript": "^3.9.6"
+    "typescript": "^3.9.7"
   },
   "dependencies": {
     "gulp-htmlmin": "^5.0.1"
